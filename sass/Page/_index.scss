@@ -23,7 +23,7 @@
      }
      }
 main{
-     border: 2px solid #C1D4E8;
+     
      margin-top: 40px;
      height: 100vh;
 }
@@ -90,10 +90,18 @@ main{
                display: flex;
                align-items: center;
                gap: 30px;
-               h4{
+               .building{
                     width: 124px;
                     font-family: 'Space Grotesk';
                     font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #001F3F;
+               }
+               .certi{
+                    width: 149px;
+                    font-family: 'Space Grotesk';
                     font-weight: 700;
                     font-size: 16px;
                     line-height: 26px;
@@ -152,4 +160,152 @@ main{
           }
       }
 }
- 
+//  test-terminal
+.test-terminal{
+     margin-bottom: 400px;
+     margin-top: 200px;
+     height: 450px;
+     // border: 3px solid #C1D4E8;
+     display: flex;
+     gap: 80px;
+     
+     // padding: 20px;
+     .left-t{
+          padding-top: 60px;
+          .heading{
+               padding: 10px 0;
+               width: 339px;
+               font-family: 'Space Grotesk';
+               font-weight: 700;
+               font-size: 30px;
+               line-height: 40px;
+               color: #001F3F;
+          }
+          .pera{
+               width: 300px;
+               font-family: 'Space Grotesk';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 16px;
+               line-height: 26px;
+               color: #435970;
+               margin-bottom: 40px;
+          }
+          a{
+               width: 197px;
+               padding: 10px 30px;
+               background: #FF5A30;
+               text-decoration: none;
+               font-family: 'Space Grotesk';
+               font-weight: 700;
+               font-size: 16px;
+               line-height: 30px;
+               color: #FFFFFF;
+          }
+     }
+     .right-t{
+          display: flex;
+          justify-content: space-between;
+          // border: 2px solid orchid;
+
+          .imgDiv{
+               position: relative;
+                
+               img{
+                    width: 470px;
+                     margin-top: 28%;
+               }
+               .overlay{
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0;
+                    width: 100%;
+                    height: 69%;
+                    background: linear-gradient(90deg, #001F3F 0%, rgba(0, 31, 63, 0) 100%);
+                    border-radius: 20px;
+
+               }
+               .circle{
+                    position: absolute;
+                    top: 45%;
+                    left: 90%;
+                    width: 69px;
+                    height: 69px;
+               }
+               &::before{
+                    position: absolute;
+                    content: '01/03';
+                    bottom: 10px;
+                    left: 40px;
+                    font-family: 'Space Grotesk';
+                    font-weight: 700;
+                    font-size: 40px;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    z-index: 1;
+
+               }
+              
+          }
+          .comment{
+               border: 1px solid #C1D4E8;
+               width: 570px;
+               height: 280px;
+               background: #FFFFFF;
+               margin-left: -260px;
+               border-radius: 30px;
+               z-index: 1;
+               .comment-he{
+                    padding: 10px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .head{
+                         h3{
+                              width: 129px;
+                              font-family: 'Space Grotesk';
+                              font-weight: 700;
+                              font-size: 20px;
+                              line-height: 30px;
+                              color: #001F3F;
+                         }
+                         h5{
+                              width: 98px;
+                              font-family: 'Space Grotesk';
+                              font-weight: 400;
+                              font-size: 16px;
+                              line-height: 26px;
+                              color: #435970;
+
+                         }
+                    }
+                    
+               }
+               .comment-pera{
+                    padding: 20px;
+                    width: 504px;
+                    font-family: 'Space Grotesk';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #435970;
+               }
+               Ul{
+                    padding: 20px;
+                    display: flex;
+                    gap: 4px;
+                    .f-49{
+                         font-family: 'Space Grotesk';
+                         font-weight: 700;
+                         font-size: 20px;
+                         line-height: 30px;
+                         color: #001F3F;
+                         text-decoration: none;
+                         padding:0 10px ;
+                    }
+               }
+          }
+          
+     }
+}
